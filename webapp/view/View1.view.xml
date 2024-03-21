@@ -1,0 +1,33 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="DemoApp.controller.View1" >
+<Page title="Master View">
+<headerContent>
+<!-- <Button icon="sap-icon://action" press="onNext"></Button> -->
+</headerContent>
+<content>
+<!-- <Button text="Navigate" press="onNext"></Button> -->
+<SearchField id="SearchField"  placeholder="Search Data" search="onSearch" liveChange="onSearch"></SearchField>
+
+<List id="idList" items="{/fruits}" mode="SingleSelectMaster" delete="onItemDelete" selectionChange="onItemPress">
+<headerToolbar><Toolbar >       <Button
+         id="helloDialogButton"
+         icon="sap-icon://home"
+         tooltip="open Popup"
+         press=".onOpenDialog"
+         class="sapUiSmallMarginEnd"/>
+         <Button id="frag2" icon="sap-icon://add-activity" tooltip="open Popup 2" press="opFrag"/>
+<ToolbarSpacer ></ToolbarSpacer><Button icon="sap-icon://delete" tooltip="delete items" press="onItemRemove"></Button> </Toolbar></headerToolbar>
+<items>
+
+<ObjectListItem intro="{type}" title="{name}" numberUnit="{currency}" number="{price}" icon="{imageURL}" >
+
+<firstStatus> <ObjectStatus text="{status}" state="{path : 'status' , formatter : '.formatter.getstatus'}" >
+</ObjectStatus></firstStatus>
+
+</ObjectListItem>
+
+</items>
+</List>
+</content>
+</Page>
+
+</mvc:View>

@@ -1,0 +1,12 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DemoApp.controller.View3">
+
+<Page title="View-3 The Supplier Data" showNavButton="true" navButtonPress="onBack">
+
+<ObjectHeader intro="{sinceWhen}" title="{name}" number="{contactNumber}" numberUnit="{contactPerson}" icon="sap-icon://supplier"></ObjectHeader>
+
+
+
+</Page>
+
+
+</mvc:View>

@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="DemoApp.controller.Empty">
+<Page title="Welcome to Hi-tech City">
+<Image src="https://i.redd.it/l22r8d3jonk91.jpg" height="95%" width="100%"></Image>
+
+</Page>
+
+</mvc:View>
